@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Mail Queues by PBCI
-Version: 1.0.3
+Version: 1.0.4
 Plugin URI: http://www.pyebrook.com/mail-queues/
 Description: Send mail using SMTP without exceeding the the rate allowed by your mail provider(s). Mail can be sent using multiple user logins/passwords to give fault tolerance and make each mail message somewhat unique so that it is less likely to be flagged as SPAM/UCE by either your or the downstream mail providers.  Messages can be automatically reset when the plugin detects Non-delivery messages (NDRs) returned from mail sent by the plugin.  
 Author: Pye Brook Company, Inc. / Jeffrey Schutzman 
@@ -23,7 +23,7 @@ Donate URI: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-?>
+
 
 
 /********************************************************

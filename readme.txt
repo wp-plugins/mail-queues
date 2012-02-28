@@ -79,6 +79,8 @@ Yes. also it has been tested with MSN, Dreamhost, Go Daddy, and self hosted SMTP
 = 1.0.3 =
 readme.txt tweaks
 
+= 1.0.4 =
+fixed typo introduced in header tweaks
 
 == Upgrade Notice ==
 
