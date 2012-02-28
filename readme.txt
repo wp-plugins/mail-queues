@@ -21,23 +21,21 @@ Email can be throttled per outbound SMTP account.  Limits can be set for maximum
 
 Non-Delivery (NDR) messaging processing note: plugin should recognize common non-delivery formats.  But, because non-deliveries are free form, and can be highly customized or specifically localized the plugin may not recognize the message.  If you provide a sample non-delivery message we can make the plug-in a little smarter.
  
-= Feature List =
+= Features =
 
-Key Features:
+* Sends mail via SMTP 
+* Send mail no faster than the configured number of recipients per hour/day.  Keeps you in complience with your providers email sending limits.
+* Configure multiple SMTP accounts to use for sending messages (Gmail, MSN, Go-daddy, etc)
+* Process non-delivery messages and automatically resend messages
+* Keep record of sent mail messages so that you can prove to your provider you didn't send SPAM
+* Automatically stops sending email when errors encountered, auotmatically restarts after configured period of time 
+* Dashboard display of mail sending statistics
 
-1. Sends mail via SMTP 
-1. Send mail no faster than the configured number of recipients per hour/day.  Keeps you in complience with your providers email sending limits.
-1. Configure multiple SMTP accounts to use for sending messages (Gmail, MSN, Go-daddy, etc)
-1. Process non-delivery messages and automatically resend messages
-1. Keep record of sent mail messages so that you can prove to your provider you didn't send SPAM
-1. Automatically stops sending email when errors encountered, auotmatically restarts after configured period of time 
-1. Dashboard display of mail sending statistics
-
-Benefits:
+= Benefits =
 
 * Using multiple email accounts makes it less likely that your email will be incorrectly flagged as SPAM by downstream providers 
 * Use in combination with other email newsletter, sending and formatting WordPress plug-ins 
-* Reduces non-delivered mail due to invalid SPAM flagging or exceeding near or downstream provider sending/recieving limits  
+* Reduces non-delivered mail due to invalid SPAM flagging or exceeding near or downstream provider sending/receiving limits  
 
 
 == Installation ==
@@ -78,10 +76,7 @@ Yes. also it has been tested with MSN, Dreamhost, Go Daddy, and self hosted SMTP
 = 1.0 =
 * Initial public release version
 
-= 1.0.1 =
-readme.txt tweaks
-
-= 1.0.2 =
+= 1.0.3 =
 readme.txt tweaks
 
 
