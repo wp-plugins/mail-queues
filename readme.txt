@@ -55,7 +55,7 @@ Non-Delivery (NDR) messaging processing note: plugin should recognize common non
 Configure a single mailbox to collect non-delivery messages.  Setup each sending mailbox to forward any messages received to that single mailbox.  The plug-in accesses that mailbox using the POP3 protocol.  User name a password for the POP3 mailbox are configured in the settings page.
 
 = How many queues can the plugin support? =
-No limit really, tested in excess of 20 simultanious SMTP queues 
+No limit really, but we have tested in excess of 20 simultanious SMTP queues 
 
 
 = Does the plugin work with gmail? =
@@ -70,6 +70,8 @@ Yes. also it has been tested with MSN, Dreamhost, Go Daddy, and self hosted SMTP
 5. Stalled Mail Display
 6. Message Queue Test Message Generation
 7. Setup new SMTP mail Queue
+8. Configured Queue List
+
 
 == Changelog ==
 
