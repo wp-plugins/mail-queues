@@ -81,6 +81,9 @@ Yes. also it has been tested with MSN, Dreamhost, Go Daddy, and self hosted SMTP
 = 1.0 =
 * Initial public release version
 
+= 1.0.1 =
+readmet.txt tweaks
+
 == Upgrade Notice ==
 
 = 1.0 =
