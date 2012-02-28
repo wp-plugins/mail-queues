@@ -3,7 +3,7 @@ Contributors: jeff@pyebrook.com
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JQ8L23G6D3ANJ
 Tags: throttle,queue,spam,uce,gmail,smtp,non-delivery,ndr,pop,pop3,phpmail,wp-mail,wp_mail,email,notification,notify,subscribe,subscription
 Requires at least: 3.0
-Tested up to: 3.1.1
+Tested up to: 3.3.1
 Stable tag: trunk
 
 Queue, Throttle, Send SMTP emil through multiple providers.  Automatic resend when non-delivery detected.
