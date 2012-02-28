@@ -43,7 +43,6 @@ Benefits:
 * Reduces non-delivered mail due to invalid SPAM flagging or exceeding near or downstream provider sending/recieving limits  
 
 
-
 == Installation ==
 
 
