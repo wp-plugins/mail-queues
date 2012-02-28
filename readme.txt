@@ -46,7 +46,7 @@ Benefits:
 == Installation ==
 
 
-1. Upload the files to the /wp-content/plugins/tumblr-importer/ directory.
+1. Upload the files to the /wp-content/plugins/pbci-mail directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Using the Mail Queues->Settings menu configure Message Header Options
 4. Using the Mail Queues->Settings menu configure Non-Delivery Report (NDR) Processing options
