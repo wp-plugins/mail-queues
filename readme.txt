@@ -12,7 +12,7 @@ Queue, Throttle, Send SMTP emil through multiple providers.  Automatic resend wh
 
 Send mail using SMTP without exceeding the the rate allowed by your mail provider(s). Mail can be sent using multiple 
 user logins/passwords to give fault tolerance and make each mail message somewhat unique so that it is less likely to 
-be flagged as SPAM/UCE by either your or the downstream mail providers.  Messages can be automatically reset when 
+be flagged as SPAM/UCE by either your or the downstream mail providers.  Messages can be automatically resent when 
 the plugin detects Non-delivery messages (NDRs) returned from mail sent by the plugin.
 
 Email can be throttled per outbound SMTP account.  Limits can be set for maximum number of recipients per hour and per day.
