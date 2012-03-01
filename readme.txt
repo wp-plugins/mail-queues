@@ -89,6 +89,10 @@ readme.txt tweaks
 = 1.0.4 =
 fixed typo introduced in header tweaks
 
+= 1.0.5 =
+a couple of comments added, readme updates
+
+
 == Upgrade Notice ==
 
 = 1.0 =
