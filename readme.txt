@@ -33,6 +33,7 @@ Email can be throttled per outbound SMTP account.  Limits can be set for maximum
 * Use in combination with other email newsletter, sending and formatting WordPress plug-ins 
 * Reduces non-delivered mail due to invalid SPAM flagging or exceeding near or downstream provider sending/receiving limits  
 
+More information can be found on our [web site](http://www.pyebrook.com/mail-queues).
 
 == Installation ==
 
