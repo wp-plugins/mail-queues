@@ -17,10 +17,6 @@ the plugin detects Non-delivery messages (NDRs) returned from mail sent by the p
 
 Email can be throttled per outbound SMTP account.  Limits can be set for maximum number of recipients per hour and per day.
 
-= Non-Delivery Processing =
-
-Non-Delivery (NDR) messaging processing note: plugin should recognize common non-delivery formats.  But, because non-deliveries are free form, and can be highly customized or specifically localized the plugin may not recognize the message.  If you provide a sample non-delivery message we can make the plug-in a little smarter.
- 
 = Features =
 
 * Sends mail via SMTP 
@@ -60,6 +56,14 @@ No limit really, but we have tested in excess of 20 simultanious SMTP queues
 
 = Does the plugin work with gmail? =
 Yes. also it has been tested with MSN, Dreamhost, Go Daddy, and self hosted SMTP servers
+
+== Notes ==
+
+= Non-Delivery Processing =
+Non-Delivery (NDR) messaging processing note: plugin should recognize common non-delivery formats.  But, because non-deliveries are free form, and can be highly customized or specifically localized the plugin may not recognize the message.  If you provide a sample non-delivery message we can make the plug-in a little smarter.
+ 
+
+
 
 == Screenshots ==
 
