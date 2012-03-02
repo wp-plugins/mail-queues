@@ -25,7 +25,7 @@ Email can be throttled per outbound SMTP account.  Limits can be set for maximum
 * Process non-delivery messages and automatically resend messages
 * Keep record of sent mail messages so that you can prove to your provider you didn't send SPAM
 * Automatically stops sending email when errors encountered, auotmatically restarts after configured period of time 
-* Dashboard display of mail sending statistics
+* Mail sending statistics display
 
 = Benefits =
 
