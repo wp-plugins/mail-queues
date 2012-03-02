@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: trunk
 
-Queue, Throttle, Send SMTP emil through multiple providers.  Automatic resend when non-delivery detected.
+Queue, Throttle, Send SMTP emil through multiple providers.  Automatic resend when non-delivery received.
 
 == Description ==
 
@@ -20,7 +20,7 @@ Email can be throttled per outbound SMTP account.  Limits can be set for maximum
 = Features =
 
 * Sends mail via SMTP 
-* Send mail no faster than the configured number of recipients per hour/day.  Keeps you in complience with your providers email sending limits.
+* Send mail no faster than the configured number of recipients per hour and day.  Keeps you in complience with your providers email sending limits.
 * Configure multiple SMTP accounts to use for sending messages (Gmail, MSN, Go-daddy, etc)
 * Process non-delivery messages and automatically resend messages
 * Keep record of sent mail messages so that you can prove to your provider you didn't send SPAM
