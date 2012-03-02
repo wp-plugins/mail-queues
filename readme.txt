@@ -63,9 +63,6 @@ Yes. also it has been tested with MSN, Dreamhost, Go Daddy, and self hosted SMTP
 = Non-Delivery Processing =
 Non-Delivery (NDR) messaging processing note: plugin should recognize common non-delivery formats.  But, because non-deliveries are free form, and can be highly customized or specifically localized the plugin may not recognize the message.  If you provide a sample non-delivery message we can make the plug-in a little smarter.
  
-
-
-
 == Screenshots ==
 
 1. Message Queues Status Display
@@ -92,10 +89,16 @@ fixed typo introduced in header tweaks
 = 1.0.5 =
 a couple of comments added, readme updates
 
+= 1.0.6 =
+Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites. 
+
 
 == Upgrade Notice ==
 
 = 1.0 =
 Initial release
+
+= 1.0.6 =
+Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites. 
 
 

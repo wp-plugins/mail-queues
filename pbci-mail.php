@@ -251,7 +251,7 @@ if (!class_exists('PBCIMailQueue')) {
 				 * get a mail queue from the status view, if no queue is returned that means that all of the configured
 				 * queues are disabled
 				 */
-				$sql = 'SELECT * FROM `'.$this->control_table.'` WHERE enabled=1';
+				$sql = 'SELECT * FROM `'.$this->control_table.'` WHERE enabled=1 ORDER BY errors ASC, sent_last_hour DESC';
 				$pbci_smtp_queues = $wpdb->get_results($sql, ARRAY_A );
 
 				$sql = 'SELECT count(*) as sent  FROM `'.$this->queue_table.'` WHERE sent=0 AND attempts<'.$this->pbci_queue_options['pbci_mail_max_send_attempts'];
