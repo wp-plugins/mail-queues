@@ -3,7 +3,7 @@ Contributors: jeff@pyebrook.com
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JQ8L23G6D3ANJ
 Tags: throttle,queue,spam,uce,gmail,smtp,non-delivery,ndr,pop,pop3,phpmail,wp-mail,wp_mail,email,notification,notify,subscribe,subscription
 Requires at least: 3.0
-Tested up to: 3.3.1
+Tested up to: 3.5
 Stable tag: trunk
 
 Queue, Throttle, Send SMTP emil through multiple providers.  Automatic resend when non-delivery received.
@@ -92,6 +92,8 @@ a couple of comments added, readme updates
 = 1.0.6 =
 Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites. 
 
+= 1.0.7 =
+Fixed warning from wpdb->prepare in WP 3.5, removed superfluous cal 
 
 == Upgrade Notice ==
 
@@ -99,6 +101,11 @@ Queues are prioritized in order of last used and then lowest number of errors.  
 Initial release
 
 = 1.0.6 =
-Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites. 
+Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites.
+
+= 1.0.7 =
+Fixed warning from wpdb->prepare in WP 3.5, removed superfluous cal
+
+ 
 
 
