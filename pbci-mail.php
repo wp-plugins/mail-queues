@@ -438,37 +438,36 @@ if (!class_exists('PBCIMailQueue')) {
 	        echo '<p>'.$count.' unsent messages in queue ready to send</p>';
 				
 			$sql = 'SELECT count(*) as sent  FROM `'.$this->queue_table.'` WHERE sent=0 AND attempts>='.$this->pbci_queue_options['pbci_mail_max_send_attempts'];
-			$count = $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$count = $wpdb->get_var( $sql );
 			if ( $count == false ) $count = $no;
 			echo '<p>'.$count.__(' unsent messages in queue not being sent becuase of too many failed attempts').'</p>';				
 			
 			$sql 	= 'select count(*) from `'.$this->queue_table.'` where (`'.$this->queue_table.'`.`queue_dt` < (now() - interval 8 hour)) AND (sent=0)';
-			$count 	= $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$count 	= $wpdb->get_var( $sql );
 			if ( $count == false ) $count = $no;
 			echo '<p>'.$count.__(' messages queued for sending more than 8 hours ago remain unsent').'</p>';
 
 			$sql 	= 'select count(*) from `'.$this->queue_table.'` where (`'.$this->queue_table.'`.`sent_dt` > (now() - interval 10 minute)) AND (sent=1)';
-			$count 	= $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$count 	= $wpdb->get_var( $sql );
 			if ( $count == false ) $count = $no;
 			echo '<p>'.$count.__(' messages sent in the last 10 minutes').'</p>';
 
 			$sql 	= 'select count(*) from `'.$this->queue_table.'` where (`'.$this->queue_table.'`.`queue_dt` > (now() - interval 10 minute))';
-			$count 	= $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$count 	= $wpdb->get_var( $sql );
 			if ( $count == false ) $count = $no;
 			echo '<p>'.$count.__(' messages queued for sending in the last 10 minutes').'</p>';
 
 			$sql 	= 'select count(*) from `'.$this->queue_table.'` where (`'.$this->queue_table.'`.`queue_dt` > (now() - interval 1 hour))';
 			if ( $count == false ) $count = $no;
-			if ( $unsentcount == false ) $unsentcount = $no;
 			echo '<p>'.$count.__(' messages queued for sending in the last hour').'</p>';
 
 			$sql 	= 'select count(*) from `'.$this->queue_table.'` where (`'.$this->queue_table.'`.`queue_dt` > (now() - interval 1 day))';
-			$count 	= $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$count 	= $wpdb->get_var( $sql );
 			if ( $count == false ) $count = $no;
 			echo '<p>'.$count.__(' messages queued for sending in the last 24 hours').'</p>';
 
 			$sql 	= 'select count(*) from `'.$this->queue_table.'` where (`'.$this->queue_table.'`.`queue_dt` between (now() - interval 1 day) AND (now() - interval 2 day))';
-			$count 	= $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$count 	= $wpdb->get_var( $sql );
 			if ( $count == false ) $count = $no;
 			echo '<p>'.$count.__(' messsages queued for sending in the period 24-48 hours ago').'</p>';
 
