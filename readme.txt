@@ -93,7 +93,10 @@ a couple of comments added, readme updates
 Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites. 
 
 = 1.0.7 =
-Fixed warning from wpdb->prepare in WP 3.5, removed superfluous prepare call 
+Fixed warning from wpdb->prepare in WP 3.5, removed superfluous prepare call
+
+= 1.0.8 =
+Fixed warnings from wpdb->prepare in WP 3.5, removed superfluous prepare calls 
 
 == Upgrade Notice ==
 
