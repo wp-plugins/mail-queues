@@ -106,6 +106,9 @@ Queues are prioritized in order of last used and then lowest number of errors.  
 = 1.0.7 =
 Fixed warning from wpdb->prepare in WP 3.5, removed superfluous prepare call
 
+= 1.0.8 =
+Fixed warnings from wpdb->prepare in WP 3.5, removed superfluous prepare calls
+
  
 
 
