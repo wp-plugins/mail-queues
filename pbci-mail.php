@@ -255,7 +255,7 @@ if (!class_exists('PBCIMailQueue')) {
 				$pbci_smtp_queues = $wpdb->get_results($sql, ARRAY_A );
 
 				$sql = 'SELECT count(*) as sent  FROM `'.$this->queue_table.'` WHERE sent=0 AND attempts<'.$this->pbci_queue_options['pbci_mail_max_send_attempts'];
-				$unsentcount = $wpdb->get_var( $wpdb->prepare( $sql ) );
+				$unsentcount = $wpdb->get_var( $sql );
 				if ( $unsentcount == 0 ) {
 					// no messages to send
 					return true;
@@ -422,7 +422,7 @@ if (!class_exists('PBCIMailQueue')) {
 	        echo '<h2>'; _e( 'Message Queue Status', 'pbci-mail' ); echo '</h2>';
 	        
 			$sql = 'SELECT count(*) as sent  FROM `'.$this->queue_table.'` WHERE sent=0 AND attempts<'.$this->pbci_queue_options['pbci_mail_max_send_attempts'];
-			$count = $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$count = $wpdb->get_var( $sql );
 			
 			$no = __('No');
 			
@@ -1356,7 +1356,7 @@ if (!class_exists('PBCIMailQueue')) {
 			global $wpdb;
 			$sql = 'SELECT count(*) as sent  FROM `'.$this->queue_table.'` WHERE sent=0 AND attempts<'.$this->pbci_queue_options['pbci_mail_max_send_attempts'];
 				
-			$unsentcount = $wpdb->get_var( $wpdb->prepare( $sql ) );
+			$unsentcount = $wpdb->get_var( $sql );
 			$timestamp = wp_next_scheduled( $this->cron_action );
 		
 			if ( ($unsentcount > 0) && ($timestamp == false) ) {
