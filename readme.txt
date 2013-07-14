@@ -3,10 +3,10 @@ Contributors: jeff@pyebrook.com
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JQ8L23G6D3ANJ
 Tags: throttle,queue,spam,uce,gmail,smtp,non-delivery,ndr,pop,pop3,phpmail,wp-mail,wp_mail,email,notification,notify,subscribe,subscription
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 1.0.8
+Tested up to: 3.5.2
+Stable tag: 1.6
 
-Queue, Throttle, Send SMTP emil through multiple providers.  Automatic resend when non-delivery received.
+Queue, Throttle, Send SMTP email through multiple providers.  Automatic re-send when non-delivery received.
 
 == Description ==
 
@@ -37,15 +37,13 @@ More information can be found on our [web site](http://www.pyebrook.com/mail-que
 
 == Installation ==
 
-
 1. Upload the files to the /wp-content/plugins/mail-queues directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Using the Mail Queues->Settings menu configure Message Header Options
 4. Using the Mail Queues->Settings menu configure Non-Delivery Report (NDR) Processing options
 5. Using the Mail Queues->Setup Queues menu define one or more message sned queues (accounts)
-6. Using the Mail Queues->Test Mail Queueing menu send a test message to be sure everything is working 
+6. Using the Mail Queues->Test Mail queuing menu send a test message to be sure everything is working 
  
-
 == Frequently Asked Questions ==
 
 = How are non-delivery messages retrieved? =
@@ -67,7 +65,7 @@ Non-Delivery (NDR) messaging processing note: plugin should recognize common non
 
 1. Message Queues Status Display
 2. Message Queues Enable/Disable, Header Options
-3. Queueing and Dequeing Options, Non-Delivery Processing Options
+3. Queueing and dequeuing Options, Non-Delivery Processing Options
 4. Non-Delivery Processing Options, Debugging and Testing Options
 5. Stalled Mail Display
 6. Message Queue Test Message Generation
@@ -77,26 +75,27 @@ Non-Delivery (NDR) messaging processing note: plugin should recognize common non
 
 == Changelog ==
 
-= 1.0 =
-* Initial public release version
+= 1.6 =
+General bug fixes  
 
-= 1.0.3 =
-readme.txt tweaks
-
-= 1.0.4 =
-fixed typo introduced in header tweaks
-
-= 1.0.5 =
-a couple of comments added, readme updates
+= 1.5 =
+Source code cleanup  
 
 = 1.0.6 =
 Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites. 
 
-= 1.0.7 =
-Fixed warning from wpdb->prepare in WP 3.5, removed superfluous prepare call
+= 1.0.5 =
+a couple of comments added, readme updates
 
-= 1.0.8 =
-Fixed warnings from wpdb->prepare in WP 3.5, removed superfluous prepare calls 
+= 1.0.4 =
+fixed typo introduced in header tweaks
+
+= 1.0.3 =
+readme.txt tweaks
+
+= 1.0 =
+* Initial public release version
+
 
 == Upgrade Notice ==
 
@@ -104,14 +103,6 @@ Fixed warnings from wpdb->prepare in WP 3.5, removed superfluous prepare calls
 Initial release
 
 = 1.0.6 =
-Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites.
-
-= 1.0.7 =
-Fixed warning from wpdb->prepare in WP 3.5, removed superfluous prepare call
-
-= 1.0.8 =
-Fixed warnings from wpdb->prepare in WP 3.5, removed superfluous prepare calls
-
- 
+Queues are prioritized in order of last used and then lowest number of errors.  This should spread email more evenely over multiple queues in low send frequency sites. 
 
 
